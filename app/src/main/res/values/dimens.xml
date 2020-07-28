@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margin">16dp</dimen>
+    <dimen name="content_margin_top_bottom">32dp</dimen>
+    <dimen name="content_margin_start_end">16dp</dimen>
+</resources>

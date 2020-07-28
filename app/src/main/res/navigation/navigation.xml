@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/generationOptionsFragment"
+        android:name="com.example.textgenerator.screens.options.GenerationOptionsFragment"
+        android:label="@string/screen_label"
+        tools:layout="@layout/fragment_generation_options">
+        <action
+            android:id="@+id/action_generationOptionsFragment_to_resultParagraphFragment"
+            app:destination="@id/resultParagraphFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.textgenerator.screens.title.TitleFragment"
+        android:label="@string/screen_label"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_generationOptionsFragment"
+            app:destination="@id/generationOptionsFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultParagraphFragment"
+        android:name="com.example.textgenerator.screens.result.ResultParagraphFragment"
+        android:label="@string/screen_label"
+        tools:layout="@layout/fragment_result_paragraph">
+        <argument
+            android:name="numberOfParagraphs"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.textgenerator.screens.about.AboutFragment"
+        android:label="@string/screen_label"
+        tools:layout="@layout/fragment_about" />
+</navigation>

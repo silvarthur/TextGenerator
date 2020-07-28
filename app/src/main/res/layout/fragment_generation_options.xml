@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="generateOptionsViewModel"
+            type="com.example.textgenerator.screens.options.GenerationOptionsViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".screens.options.GenerationOptionsFragment">
+
+        <EditText
+            android:id="@+id/number_of_paragraphs_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_paragraphs_text"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/asul"
+            android:text="@string/confirm_text"
+            android:onClick="@{() -> generateOptionsViewModel.clickOnConfirmButton()}"/>
+    </LinearLayout>
+</layout>

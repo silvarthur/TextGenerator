@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Text Generator</string>
+    <string name="generate_button_text">Generate Text</string>
+    <string name="about_button_text">About</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="number_of_paragraphs_text">How many paragraphs?</string>
+    <string name="confirm_text">Confirm</string>
+    <string name="result_paragraph_header_text">Here is the output:</string>
+    <string name="how_many_paragraphs_field_empty">First, you have to inform the number of
+        paragraphs.</string>
+    <string name="about_screen_header">Welcome to the Text Generator App!</string>
+    <string name="screen_label">Text Generator</string>
+    <string name="about_text">This app allows you to generate dummy text for replacing text
+        in any work you have been doing just to provide an example.</string>
+</resources>
